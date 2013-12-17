@@ -1,0 +1,209 @@
+body{
+	background: gold;
+}
+#phone{
+	width:350px;
+	height:480px;
+	border-radius:25px;
+	background:#000;
+	margin:0px auto;
+	padding:80px 0px;
+	font-family: "Helvetica Neue";
+	font-size:12px;
+	font-weight: 300;
+}
+#screen{
+	background:#fff;
+	width:320px;
+	height: 480px;
+	margin:0px auto;
+	overflow:hidden;
+	/*overflow-y:scroll;*/
+	position:relative;
+}
+#status{
+	position:absolute;
+	height:20px;
+	width:320px;
+	box-sizing:border-box;
+	padding:4px;
+	opacity:.75;
+	background: #fff;
+	font-weight: bold;
+	z-index:10;
+}
+.chatleft{
+	margin:10px 10px 10px -10px;
+	text-align: left;
+	clear:both;
+}
+.chatright{
+	margin:10px -10px 10px 10px;
+	text-align: right;
+	clear:both;
+}
+.chatleft .bubble{
+	float:left;
+}
+.chatright .bubble{
+	float:right;
+}
+.bubble{
+	width:80px;
+	height:80px;
+	border-radius:999px;
+	background:violet;
+
+}
+.bubble img{
+	width:100%;
+	height:100%;
+	border-radius:999px;
+
+}
+.clear{
+	clear:both;
+}
+.chatleft .text{
+	margin-left: 90px;
+}
+.chatright .text{
+	margin-right: 90px;
+}
+.name{
+	font-size:10px;
+	opacity:.75;
+	padding:3px 0px;
+}
+.msg{
+	font-size:14px;
+	background: #e7e7e7;
+	padding:10px;
+	box-sizing:border-box;
+	border-radius: 10px;
+	text-align: left;
+}
+.chatright .msg{
+	background:lightblue;
+}
+#offstate{
+	top:0px;
+	position:absolute;
+	height:480px;
+}
+#stage_container{
+	overflow-x:scroll;
+	width:320px;
+	position:absolute;
+	bottom:0px;
+	height:54px;
+	background: #e7e7e7;
+}
+#stage{
+	width:500px;
+}
+#stage .bubble{
+	width:50px;
+	height:50px;
+	float:left;
+}
+#stage .newbubble{
+	line-height:44px;
+	font-size: 24px;
+	text-align: center;
+	width:48px;
+	height:48px;
+	float:left;
+	border:1px solid gray;
+	color:gray;
+	border-radius:999px;
+	cursor:pointer;
+	background: white;
+}
+#textinput{
+	position:absolute;
+	box-sizing:border-box;
+	border-top:1px solid lightgray;
+	bottom:54px;
+	height:44px;
+	background:#e7e7e7;
+	width:320px;
+	padding:8px;
+	padding-right: 0px
+}
+#textinput input{
+	box-sizing:border-box;
+	width:240px;
+	height:28px;
+	border-radius: 4px;
+	border:none;
+	font-size:14px;
+	padding:4px;
+	font-weight: 300;
+}
+#textinput button{
+	width:66px;
+	background:transparent;
+	border:none;
+	font-size:18px;
+	margin:0px auto;
+	padding-top:2px;
+	height:28px;
+	text-align: center;
+	color:darkgray;
+}
+#record_overlay{
+	width:320px;
+	height:480px;
+	background:rgba(0,0,0,.7);
+	position:absolute;
+	left:0px;
+	top:0px;
+	display:none;
+}
+#record_overlay .bubble{
+	width:280px;
+	height:280px;
+	margin:20px auto;
+}
+#record_overlay button{
+	width:60px;
+	height:60px;
+	line-height:0px;
+	border:1px solid white;
+	padding:20px 20px;
+	border-radius: 999px;
+	color:white;
+}
+#record_overlay .yes{
+	float:right;
+	margin-right:40px;
+	background:green;
+}
+#record_overlay .no{
+	float: left;
+	margin-left:40px;
+	background:red;
+}
+#keyboard{
+	position:absolute;
+	bottom:-216px;
+	height:216px;
+	width:320px;
+	background: url("../images/keyboard.jpg") lightgray;
+	background-size:320px;
+}
+
+/* For modern browsers */
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+    zoom:1;
+}
